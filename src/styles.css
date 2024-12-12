@@ -1,3 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: lightblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header {
+    background-color: #E8572B;
+}
+
+.restaurant-name {
+    font-family: "Playwrite MX", cursive;
+    color: #FECE46;
+    font-style: oblique;
+    font-size: 2rem;
+    padding-bottom: .4rem;
+}
+
+nav {
+    padding: .5rem;
+}
+
+main {
+    background-image: url("./media/minimalist-tacos-background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+#content {
+}
+
+footer {
+    background-color: #FFE8CD;
+    text-align: center;
+    padding: .2rem;
+    font-family: 'Courier New', Courier, monospace;
 }
