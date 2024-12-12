@@ -29,6 +29,7 @@ nav {
 
 nav button {
     cursor: pointer;
+    padding: 0.1rem .4rem;
 }
 
 main {
@@ -57,5 +58,15 @@ footer {
     background-color: #ffe8cd;
     text-align: center;
     padding: .2rem;
-    font-family: 'Courier New', Courier, monospace;
+}
+
+/* CARD COMPONENT STYLE */
+.card {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.menu-title {
+    font-size: 1.5rem;
 }

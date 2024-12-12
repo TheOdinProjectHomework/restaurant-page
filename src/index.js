@@ -1,6 +1,7 @@
 import "./styles.css";
 import { homeComponent } from "./home";
 import { aboutComponent } from "./about";
+import { menuComponent } from "./menu";
 
 console.log("dev server started");
 console.log("Run: npx webpack serve");
@@ -21,11 +22,26 @@ const handleButton = () => {
 
 const handleButtonClick = (name) => {
     console.log(`button clicked: ${name}`);
-    if(name === "Home") {
-        homeComponent(content);
-    } else if(name === "About") {
-        aboutComponent(content);
+    switch(name) {
+        case "Home":
+            homeComponent(content);
+            break;
+        case "About":
+            aboutComponent(content);
+            break;
+        case "Menu":
+            menuComponent(content);
+            break;
+            default:
+                alert(`Something went wrong`);
     }
+    // if(name === "Home") {
+    //     homeComponent(content);
+    // } else if(name === "About") {
+    //     aboutComponent(content);
+    // } else if(name === "Menu") {
+    //     menuComponent(content);
+    // }
 }
 
 homeComponent(content);
